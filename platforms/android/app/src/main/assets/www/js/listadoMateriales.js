@@ -55,7 +55,7 @@ $.getJSON(server+'api/materialPorCurso/movil/'+localStorage.getItem("id_curso"),
             htmlListado+='<div class="item-media"><img src="imagenes/'+formatoArchivo(extension[1])+'" width="44"/></div>';
             htmlListado+=' <div class="item-inner">';
             htmlListado+='<div class="item-title-row">';
-            htmlListado+='<div class="item-title"><b>'+element.nombre_material+'</b></div>';
+            htmlListado+='<div class="item-title"><b> <a  class="link external no-ripple" target="_blank" href="'+storageServer+element.path+'"> '+element.nombre_material+'</a></b></div>';
             htmlListado+='</div>';
             htmlListado+='<div class="item-subtitle">Archivo: <a  class="link external no-ripple" target="_blank" href="'+storageServer+element.path+'"> '+element.path+'</a></div>';
             //htmlListado+='<div class="item-subtitle">Descripcion: '+des+'</div>';
