@@ -1,68 +1,13 @@
 //Funcion que detecta cuando se inicia y carga el hmtl "inicio"
 $$(document).on('page:init', '.page[data-name="inicio"]', function (e) {
 
-  const push = PushNotification.init({
-    android: {
-      "senderID": "796845603929"
-    },
-      browser: {
-          pushServiceURL: 'http://push.api.phonegap.com/v1/push'
-      },
-    ios: {
-      alert: "true",
-      badge: "true",
-      sound: "true"
-    },
-    windows: {}
-  });
-
-  $.getJSON(server+'api/revisarToken/'+localStorage.getItem("usuario"), function(data) {
-    console.log( "success");
-    tokenBd=data[0].token;
-    console.log('El usuario posee el token: ',tokenBd);
-
-    if(tokenBd==null){
-      console.log('No hay token registrado');
-      console.log(tokenBd);
-      //token='dy97EKcJPPs:APA91bH5BqkNRa0MtsH69suzlpthSVab6DIy3sPkaRnEuPJCYy0B7_-Aqh0ApB3IN9CmBQZp2-4tuCnuNGq8WEE_v07pSiao8aVyOCK2ZGHQffi7KQ4Z-vZRc_nxAYrJnBAFgAP0ZSBh';
-
-      push.on('registration', (data) => {
-      
-        console.log('este es el id de registro:',data.registrationId);
-        console.log('este es el tipo de registro:',data.registrationType);
-        token=data.registrationId;
-        $.ajax({
-          type: "POST",
-          url: server+'api/registrarToken',
-          data: { id: localStorage.getItem("usuario"), token: token },
-          success: function (data) {
-            console.log(data);
-          },
-        });
   
-      });
-      /**/
   
       
-    }
+    
 
-    /*push.on('registration', (data) => {
-      
-        console.log('este es el id de registro:',data.registrationId);
-        console.log('este es el tipo de registro:',data.registrationType);
-        token=data.registrationId;
-        $.ajax({
-          type: "POST",
-          url: 'http://127.0.0.1:8000/api/registrarToken',
-          data: { id: localStorage.getItem("usuario"), token: token },
-          success: function (data) {
-            console.log(data);
-          },
-        });
+
   
-      });*/
-
-  });
   var mensajecerrarSesion = app.toast.create({
     text: 'Sesión cerrada',
     closeTimeout: 2000,
