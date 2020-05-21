@@ -1,0 +1,21 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "cl.ubiobio.eduapp"
+    },
+    "phonegap-plugin-push": {
+      "PACKAGE_NAME": "cl.ubiobio.eduapp"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "cl.ubiobio.eduapp"
+    }
+  },
+  "dependent_plugins": {}
+}

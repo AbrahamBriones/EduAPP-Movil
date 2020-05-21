@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "796845603929",
+    "firebase_url": "https://fir-eduapp.firebaseio.com",
+    "project_id": "fir-eduapp",
+    "storage_bucket": "fir-eduapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796845603929:android:5617d0469c4c25e79e0548",
+        "android_client_info": {
+          "package_name": "cl.ubiobio.eduapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796845603929-c5cgkr6k7klrd36qs2nrtfakttphvlhm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXZGgWVrOqITR1g-76xGhVilvvcLIdSio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796845603929-c5cgkr6k7klrd36qs2nrtfakttphvlhm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
